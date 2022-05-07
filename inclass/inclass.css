@@ -1,0 +1,28 @@
+body{
+    background-color: purple;
+}
+h1{
+    color: white;
+    font-size: 1.5em;
+    background-color: green;
+    padding: 25px;
+    border: 3px solid #7f7f7f;
+    margin:50px 100px 10px 300px;
+}
+h2{
+    color: blue;
+    background-color:brown;
+}
+p{
+    width: 500px;
+    margin: 15px auto;
+}
+.wider{
+    width: 700px;
+    color: beige;
+    line-height: 1.5em;
+}
+#myname{
+    color: aqua;
+    font-family: 'Water Brush', cursive;
+}
