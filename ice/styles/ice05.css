@@ -1,0 +1,42 @@
+/* img {
+    border-radius: 50%;
+} */
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    background-color: #737373;
+}
+#top{
+    width: device-width;
+    margin:auto;
+    grid-column: 1/-1;
+}
+#desk{
+    border-color: #444444;
+    border-width: 15px
+}
+#body{
+    grid-column: 1/-1;
+    width: device-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 90px;
+}
+.body{
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 15px;
+    border-color: #444444;
+    max-width: 285px;
+    /* background-color: gray; */
+}
+/* #desk{
+    border-radius: 50%;
+}
+#graphic{
+    border-radius: 50%;
+} */

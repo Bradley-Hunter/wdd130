@@ -1,0 +1,19 @@
+body {
+    background-color: turquoise;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: 150px 500px 500px; */
+    column-gap: 15px;
+    row-gap: 50px;
+}
+#success{
+    grid-column: 1/-1;
+    grid-row: 1;
+    background-color: green;
+}
+#first{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
