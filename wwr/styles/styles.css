@@ -1,75 +1,147 @@
-#content{
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Ubuntu+Mono');
+
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
-nav a{
+
+nav a {
     text-align: center;
     color: #DEDEE3;
     text-decoration: none;
+    padding: 35px;
 }
-#hero-msg h1, #hero-msg h4{
+
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
 }
+
 .button-box {
     text-align: center;
 }
+
 main section {
     text-align: center;
 }
-#background{
+
+#background {
     height: 725px;
     background-color: #073D74;
 }
-body{
+
+body {
+    /* background-color: #073D74; */
+    font-family: "Ubuntu Mono", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
     background-color: #073D74;
 }
-header{
-    background-color: #073D74;
-}
-nav a:hover{
+
+nav a:hover {
     background-color: #073D74;
     color: #FFA985
 }
-.book, .join{
+
+.book,
+.join {
     background-color: #073D74;
     color: #FFA985;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover, .join:hover{
+
+.book:hover,
+.join:hover {
     background-color: #073D74;
     color: #DEDEE3;
 }
-.msg{
+
+.msg {
     background-color: #073D74;
+    line-height: 1.5em;
+    padding: 35px;
 }
-footer{
+
+footer {
     background-color: #073D74;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
-.home-title{
+
+.home-title {
+    color: #FFA985;
+    font-family: 'Permanent Marker', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h4 {
     color: #FFA985;
 }
-h4{
+
+.msg h2 {
+    color: #FFA985;
+    font-family: 'Permanent Marker', 'Bradley Hand', sans-serif;
+}
+
+.msg p {
+    color: #FFA985;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer h3 {
     color: #FFA985;
 }
-.msg h2{
-    color: #FFA985;
-}
-.msg p{
-    color: #FFA985;
-}
-footer h3{
-    color: #FFA985;
-}
-footer a{
+
+footer a {
     color: #FFA985;
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     color: #DEDEE3;
 }
-.logo{
+
+.logo {
     width: 80px;
 }
-.icon{
+
+.icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid black;
+}
+
+main section img{
+    box-sizing: border-box;
 }
