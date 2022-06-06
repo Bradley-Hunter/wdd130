@@ -51,7 +51,7 @@ class Header extends HTMLElement {
         <header>
           <nav>
             <ul class="navul">
-              <li class="navli"><a href="/index.html">
+              <li class="navli"><a href="/wdd130/index.html">
               <img class="navimg" src="/images/my_picture.jpg" alt="My Picture">
               </a></li>
               <li class="navli"><a class="nav" href="/aboutme/index.html">About Me</a></li>
