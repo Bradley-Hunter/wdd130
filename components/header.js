@@ -52,12 +52,12 @@ class Header extends HTMLElement {
           <nav>
             <ul class="navul">
               <li class="navli"><a href="/wdd130/index.html">
-              <img class="navimg" src="/images/my_picture.jpg" alt="My Picture">
+              <img class="navimg" src="/wdd130/images/my_picture.jpg" alt="My Picture">
               </a></li>
-              <li class="navli"><a class="nav" href="/aboutme/index.html">About Me</a></li>
-              <li class="navli"><a class="nav" href="/ice/index.html">ICE Challenges</a></li>
-              <li class="navli"><a class="nav" href="/wwr/index.html">Wet Ways Whitewater Rafting</a></li>
-              <li class="navli"><a class="nav" href="/prove/positioning.html">Prove 06</a></li>
+              <li class="navli"><a class="nav" href="/wdd130/aboutme/index.html">About Me</a></li>
+              <li class="navli"><a class="nav" href="/wdd130/ice/index.html">ICE Challenges</a></li>
+              <li class="navli"><a class="nav" href="/wdd130/wwr/index.html">Wet Ways Whitewater Rafting</a></li>
+              <li class="navli"><a class="nav" href="/wdd130/prove/positioning.html">Prove 06</a></li>
             </ul>
           </nav>
         </header>
