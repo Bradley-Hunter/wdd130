@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Python Projects</title>
+    <script>
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
 </head>
 
 <!-- Using code from https://www.w3schools.com/howto/howto_js_expanding_grid.asp to create the needed design -->
@@ -16,25 +27,24 @@
             <img class="logo" src="images/my_picture.jpg" alt="My picture">
         </a>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Home/Resume</a>
             <a href="python.html">Python Projects</a>
             <a href="csharp.html">C# Projects</a>
             <a href="site-plan.html">Site Plan</a>
         </nav>
     </header>
-    <main>
+    <main class="projects">
         <h1>Sort Algorithm</h1>
         <p>The sort algorithm is a program that will sort any list from a json file that is entered by the user. This
             program is programmed in Python and was made for my CSE 130 Algorithm Design class at Brigham Young
             University-Idaho.</p>
-        <h2>Code</h2>
-        <div class="row">
-            <div class="column" onclick="openTab('b1');" style="background:#455F5E;">Sort Algorithm</div>
+        <div>
+            <div class="column" onclick="openTab('b1');" style="width: 100%;">Sort Algorithm Code</div>
         </div>
 
-        <div id="b1" class="containerTab" style="display:none;background:#455F5E">
+        <div id="b1" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <h2>Sort Algorithm</h2>
+            <h2>Sort Algorithm Code</h2>
             <pre>
                 <code>
 # Imports the json library.
@@ -149,19 +159,19 @@ if __name__ == '__main__':
                 </code>
             </pre>
         </div>
-        <img src="images/sort_algorithm_run_pic.png" alt="sort algorithm runtime">
+        <img class="run-img" src="images/sort_algorithm_run_pic.png" alt="sort algorithm runtime">
 
         <h1>Francois Number Sequence</h1>
         <p>The Francois Number Sequence is a program that will generate a number in a sequence that the user wants. This
             program is programmed in Python and was made for my CSE 130 Algorithm Design class at Brigham Young
             University-Idaho</p>
-        <div class="row">
-            <div class="column" onclick="openTab('b1');" style="background:#455F5E;">Francois</div>
+        <div>
+            <div class="column" onclick="openTab('b2');" style="width: 100%;">Francois Number Finder Code</div>
         </div>
 
-        <div id="b1" class="containerTab" style="display:none;background:#455F5E">
+        <div id="b2" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <h2>Francois</h2>
+            <h2>Francois Number Finder Code</h2>
             <pre>
                 <code>
 # This function will return the number that the user chooses.
@@ -240,7 +250,7 @@ if __name__ == '__main__':
                 </code>
             </pre>
         </div>
-        <img src="images/francois.png" alt="francois runtime">
+        <img class="run-img" src="images/francois.png" alt="francois runtime">
 
     </main>
     <footer>

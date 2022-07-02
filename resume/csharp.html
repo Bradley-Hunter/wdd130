@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>C# Projects</title>
+    <script>
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
 </head>
 
 <!-- Using code from https://www.w3schools.com/howto/howto_js_expanding_grid.asp to create the needed design -->
@@ -16,37 +27,38 @@
             <img class="logo" src="images/my_picture.jpg" alt="My picture">
         </a>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Home/Resume</a>
             <a href="python.html">Python Projects</a>
             <a href="csharp.html">C# Projects</a>
             <a href="site-plan.html">Site Plan</a>
         </nav>
     </header>
-    <main>
+    <main class="projects">
         <h1>Cycle Game</h1>
-        <p>The cycle game is a game coded in C# that I created in my CSE 210 Programming with Classes class while attending Brigham Young University-Idaho.</p>
+        <p>The cycle game is a game coded in C# that I created in my CSE 210 Programming with Classes class while
+            attending Brigham Young University-Idaho.</p>
         <h2>Files</h2>
         <div class="row">
-            <div class="column" onclick="openTab('b1');" style="background:#455F5E;">Program.cs</div>
-            <div class="column" onclick="openTab('b2');" style="background:#455F5E;">Constants.cs</div>
-            <div class="column" onclick="openTab('b3');" style="background:#455F5E;">Director.cs</div>
-            <div class="column" onclick="openTab('b4');" style="background:#455F5E;">Cast.cs</div>
-            <div class="column" onclick="openTab('b5');" style="background:#455F5E;">Actor.cs</div>
-            <div class="column" onclick="openTab('b6');" style="background:#455F5E;">Color.cs</div>
-            <div class="column" onclick="openTab('b7');" style="background:#455F5E;">Cycle.cs</div>
-            <div class="column" onclick="openTab('b8');" style="background:#455F5E;">Point.cs</div>
-            <div class="column" onclick="openTab('b9');" style="background:#455F5E;">Action.cs</div>
-            <div class="column" onclick="openTab('b10');" style="background:#455F5E;">ControlActorsAction.cs</div>
-            <div class="column" onclick="openTab('b11');" style="background:#455F5E;">DrawActorsAction.cs</div>
-            <div class="column" onclick="openTab('b12');" style="background:#455F5E;">HandleCollisionsAction.cs</div>
-            <div class="column" onclick="openTab('b13');" style="background:#455F5E;">MoveActorsAction.cs</div>
-            <div class="column" onclick="openTab('b14');" style="background:#455F5E;">Script.cs</div>
-            <div class="column" onclick="openTab('b15');" style="background:#455F5E;">KeyboardService.cs</div>
-            <div class="column" onclick="openTab('b16');" style="background:#455F5E;">VideoService.cs</div>
+            <div class="column" onclick="openTab('b1');">Program.cs</div>
+            <div class="column" onclick="openTab('b2');">Constants.cs</div>
+            <div class="column" onclick="openTab('b3');">Director.cs</div>
+            <div class="column" onclick="openTab('b4');">Cast.cs</div>
+            <div class="column" onclick="openTab('b5');">Actor.cs</div>
+            <div class="column" onclick="openTab('b6');">Cycle.cs</div>
+            <div class="column" onclick="openTab('b7');">Color.cs</div>
+            <div class="column" onclick="openTab('b8');">Point.cs</div>
+            <div class="column" onclick="openTab('b9');">Action.cs</div>
+            <div class="column" onclick="openTab('b10');">ControlActorsAction.cs</div>
+            <div class="column" onclick="openTab('b11');">DrawActorsAction.cs</div>
+            <div class="column" onclick="openTab('b12');">HandleCollisionsAction.cs</div>
+            <div class="column" onclick="openTab('b13');">MoveActorsAction.cs</div>
+            <div class="column" onclick="openTab('b14');">Script.cs</div>
+            <div class="column" onclick="openTab('b15');">KeyboardService.cs</div>
+            <div class="column" onclick="openTab('b16');">VideoService.cs</div>
         </div>
 
         <!-- The expanding grid (hidden by default) -->
-        <div id="b1" class="containerTab" style="display:none;background:#455F5E">
+        <div id="b1" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Program.cs</h2>
             <pre>
@@ -100,7 +112,7 @@ namespace Unit05
             </pre>
         </div>
 
-        <div id="b2" class="containerTab" style="display:none;background:blue">
+        <div id="b2" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Constants.cs</h2>
             <pre>
@@ -141,7 +153,7 @@ namespace Unit05.Game
             </pre>
         </div>
 
-        <div id="b3" class="containerTab" style="display:none;background:red">
+        <div id="b3" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Director.cs</h2>
             <pre>
@@ -209,7 +221,7 @@ namespace Unit05.Game.Directing
                 </code>
             </pre>
         </div>
-        <div id="b4" class="containerTab" style="display:none;background:red">
+        <div id="b4" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Cast.cs</h2>
             <pre>
@@ -331,7 +343,7 @@ namespace Unit05.Game.Casting
                 </code>
             </pre>
         </div>
-        <div id="b5" class="containerTab" style="display:none;background:red">
+        <div id="b5" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Actor.cs</h2>
             <pre>
@@ -496,14 +508,146 @@ namespace Unit05.Game.Casting
                 </code>
             </pre>
         </div>
-        <div id="b6" class="containerTab" style="display:none;background:red">
+        <div id="b6" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Cycle.cs</h2>
+            <pre>
+                <code>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Unit05.Game.Casting
+{
+    /// <summary>
+    /// <para>A long limbless reptile.</para>
+    /// <para>The responsibility of Snake is to move itself.</para>
+    /// </summary>
+    public class Cycle : Actor
+    {
+        private List<Actor> segments = new List<Actor>();
+        private int startPoint = Constants.MAX_X/2;
+        private Color bodyColor;
+
+        /// <summary>
+        /// Constructs a new instance of a Cycle.
+        /// </summary>
+        public Cycle(int startPoint, Color color)
+        {
+            bodyColor = color;
+            PrepareBody(startPoint, bodyColor);
+        }
+
+        /// <summary>
+        /// Gets the cycles's segments.
+        /// </summary>
+        /// <returns>The body segments in a List.</returns>
+        public List<Actor> GetBody()
+        {
+            return new List<Actor>(segments.Skip(1).ToArray());
+        }
+
+        /// <summary>
+        /// Gets the cycles's head segment.
+        /// </summary>
+        /// <returns>The head segment as an instance of Actor.</returns>
+        public Actor GetHead()
+        {
+            return segments[0];
+        }
+
+        /// <summary>
+        /// Gets the cycle's segments (including the head).
+        /// </summary>
+        /// <returns>A list of cycle segments as instances of Actors.</returns>
+        public List<Actor> GetSegments()
+        {
+            return segments;
+        }
+
+        /// <summary>
+        /// Grows the cycle's tail by the given number of segments.
+        /// </summary>
+        /// <param name="numberOfSegments">The number of segments to grow.</param>
+        public void GrowTail(int numberOfSegments)
+        {
+            for (int i = 0; i < numberOfSegments; i++)
+            {
+                Actor tail = segments.Last<Actor>();
+                Point velocity = tail.GetVelocity();
+                Point offset = velocity.Reverse();
+                Point position = tail.GetPosition().Add(offset);
+
+                Actor segment = new Actor();
+                segment.SetPosition(position);
+                segment.SetVelocity(velocity);
+                segment.SetText("#");
+                segment.SetColor(bodyColor);
+                segments.Add(segment);
+            }
+        }
+
+        /// <inheritdoc/>
+        public override void MoveNext()
+        {
+            foreach (Actor segment in segments)
+            {
+                segment.MoveNext();
+            }
+
+            for (int i = segments.Count - 1; i > 0; i--)
+            {
+                Actor trailing = segments[i];
+                Actor previous = segments[i - 1];
+                Point velocity = previous.GetVelocity();
+                trailing.SetVelocity(velocity);
+            }
+        }
+
+        /// <summary>
+        /// Turns the head of the cycle in the given direction.
+        /// </summary>
+        /// <param name="velocity">The given direction.</param>
+        public void TurnHead(Point direction)
+        {
+            segments[0].SetVelocity(direction);
+        }
+
+        /// <summary>
+        /// Prepares the cycle body for moving.
+        /// </summary>
+        private void PrepareBody(int startPoint, Color color)
+        {
+            int x = startPoint;
+            int y = Constants.MAX_Y / 2;
+
+            for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
+            {
+                Point position = new Point(x - i * Constants.CELL_SIZE, y);
+                Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
+                string text = i == 0 ? "8" : "#";
+                // Color color = i == 0 ? Constants.YELLOW : Constants.GREEN;
+
+                Actor segment = new Actor();
+                segment.SetPosition(position);
+                segment.SetVelocity(velocity);
+                segment.SetText(text);
+                segment.SetColor(color);
+                segments.Add(segment);
+            }
+        }
+    }
+}
+                </code>
+            </pre>
+        </div>
+        <div id="b7" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Color.cs</h2>
             <pre>
                 <code>
 using System.Collections.Generic;
 
-
 namespace Unit05.Game.Casting
 {
     /// <summary>
@@ -573,83 +717,7 @@ namespace Unit05.Game.Casting
                 </code>
             </pre>
         </div>
-        <div id="b7" class="containerTab" style="display:none;background:red">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <h2>Cycle.cs</h2>
-            <pre>
-                <code>
-using System.Collections.Generic;
-
-namespace Unit05.Game.Casting
-{
-    /// <summary>
-    /// <para>A color.</para>
-    /// <para>The responsibility of Color is to hold and provide information about itself. Color has 
-    /// a few convenience methods for comparing and converting them.
-    /// </para>
-    /// </summary>
-    public class Color
-    {
-        private int red = 0;
-        private int green = 0;
-        private int blue = 0;
-        private int alpha = 255;
-
-        /// <summary>
-        /// Constructs a new instance of Color using the given red, green and blue values.
-        /// </summary>
-        /// <param name="red">The given red value (0-255).</param>
-        /// <param name="green">The given green value (0-255).</param>
-        /// <param name="blue">The given blue value (0-255).</param>
-        public Color(int red, int green, int blue)
-        {
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
-        }
-
-        /// <summary>
-        /// Gets the color's alpha value.
-        /// </summary>
-        /// <returns>The alpha value.</returns>
-        public int GetAlpha()
-        {
-            return alpha;
-        }
-
-        /// <summary>
-        /// Gets the color's blue value.
-        /// </summary>
-        /// <returns>The blue value.</returns>
-        public int GetBlue()
-        {
-            return blue;
-        }
-
-        /// <summary>
-        /// Gets the color's green value.
-        /// </summary>
-        /// <returns>The green value.</returns>
-        public int GetGreen()
-        {
-            return green;
-        }
-
-        /// <summary>
-        /// Gets the color's red value.
-        /// </summary>
-        /// <returns>The red value.</returns>
-        public int GetRed()
-        {
-            return red;
-        }
-
-    }
-}
-                </code>
-            </pre>
-        </div>
-        <div id="b8" class="containerTab" style="display:none;background:red">
+        <div id="b8" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Point.cs</h2>
             <pre>
@@ -746,7 +814,7 @@ namespace Unit05.Game.Casting
                 </code>
             </pre>
         </div>
-        <div id="b9" class="containerTab" style="display:none;background:red">
+        <div id="b9" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Action.cs</h2>
             <pre>
@@ -777,7 +845,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b10" class="containerTab" style="display:none;background:red">
+        <div id="b10" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>ControlActorsAction.cs</h2>
             <pre>
@@ -871,7 +939,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b11" class="containerTab" style="display:none;background:red">
+        <div id="b11" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>DrawActorsAction.cs</h2>
             <pre>
@@ -926,7 +994,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b12" class="containerTab" style="display:none;background:red">
+        <div id="b12" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>HandleCollisionsAction.cs</h2>
             <pre>
@@ -1079,7 +1147,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b13" class="containerTab" style="display:none;background:red">
+        <div id="b13" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>MoveActorsAction.cs</h2>
             <pre>
@@ -1133,7 +1201,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b14" class="containerTab" style="display:none;background:red">
+        <div id="b14" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>Script.cs</h2>
             <pre>
@@ -1212,7 +1280,7 @@ namespace Unit05.Game.Scripting
                 </code>
             </pre>
         </div>
-        <div id="b15" class="containerTab" style="display:none;background:red">
+        <div id="b15" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>KeyboardService.cs</h2>
             <pre>
@@ -1277,7 +1345,7 @@ namespace Unit05.Game.Services
                 </code>
             </pre>
         </div>
-        <div id="b16" class="containerTab" style="display:none;background:red">
+        <div id="b16" class="containerTab">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
             <h2>VideoService.cs</h2>
             <pre>
@@ -1422,7 +1490,7 @@ namespace Unit05.Game.Services
         <video controls>
             <source src="videos/wdd130_personal_cycle.mp4" type="video/mp4">
             Your browser does not support the video tag.
-          </video>
+        </video>
     </main>
     <footer>
         <h3>Portfolio/Resume &copy; 2022 - Bradley Hunter</h3>
