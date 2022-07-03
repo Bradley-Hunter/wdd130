@@ -92,6 +92,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: .6em;
 }
 footer h3 a, footer a{
     text-decoration: none;
