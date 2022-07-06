@@ -9,12 +9,19 @@
     <title>C# Projects</title>
     <script>
         function openTab(tabName) {
-            var i, x;
-            x = document.getElementsByClassName("containerTab");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            // console.log(document.getElementById(tabName).style.display);
+            // console.log(getComputedStyle(document.getElementById(tabName)).display);
+            
+            if (getComputedStyle(document.getElementById(tabName)).display === "none") {
+                var i, x;
+                x = document.getElementsByClassName("containerTab");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(tabName).style.display = "block";
+            } else {
+                document.getElementById(tabName).style.display = "none";
             }
-            document.getElementById(tabName).style.display = "block";
         }
     </script>
 </head>
